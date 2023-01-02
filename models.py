@@ -1,6 +1,6 @@
 import torch.nn as nn
 import torch.nn.functional as F
-from layers import GATLayer, ModifiedGATLayer, GCNLayer
+from layers import GATLayer, ModifiedGATLayer, GNNLayer
 
 class ModifiedGATModule(nn.Module):
     def __init__(self, input_dim, hidden_dim, output_dim, num_layers=2, act_fn=nn.ReLU, dropout = 0.2):
