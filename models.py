@@ -10,9 +10,10 @@ class ModifiedGATModule(nn.Module):
       self.out_attention = ModifiedGATLayer(hidden_dim, output_dim, concat = False, num_heads=1)
 
     def forward(self, x, adj_matrix):
-      x = self.attention(x, adj_matrix)
       x = F.dropout(x, self.dropout, training=self.training)
+      x = self.attention(x, adj_matrix)
       x = F.elu(x)
+      x = F.dropout(x, self.dropout, training=self.training)
       x = self.out_attention(x, adj_matrix)
       return x
 
@@ -24,9 +25,10 @@ class GATModule(nn.Module):
       self.out_attention = GATLayer(hidden_dim, output_dim, concat = False, num_heads=1)
 
     def forward(self, x, adj_matrix):
-      x = self.attention(x, adj_matrix)
       x = F.dropout(x, self.dropout, training=self.training)
+      x = self.attention(x, adj_matrix)
       x = F.elu(x)
+      x = F.dropout(x, self.dropout, training=self.training)
       x = self.out_attention(x, adj_matrix)
       return x
 
@@ -38,9 +40,10 @@ class GNNModule(nn.Module):
       self.second = GNNLayer(hidden_dim, output_dim)
 
     def forward(self, x, adj_matrix):
-      x = self.fisrt(x, adj_matrix)
       x = F.dropout(x, self.dropout, training=self.training)
+      x = self.fisrt(x, adj_matrix)
       x = F.relu(x)
+      x = F.dropout(x, self.dropout, training=self.training)
       x = self.second(x, adj_matrix)
       return x
 
@@ -55,8 +58,9 @@ class MLPModule(nn.Module):
       self.second = nn.Linear(hidden_dim, output_dim)
 
     def forward(self, x):
-      x = self.fisrt(x)
       x = F.dropout(x, self.dropout, training=self.training)
+      x = self.fisrt(x)
       x = F.relu(x)
+      x = F.dropout(x, self.dropout, training=self.training)
       x = self.second(x)
       return x

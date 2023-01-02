@@ -4,10 +4,11 @@ import torch.nn.functional as F
 
 class GATLayer(nn.Module):
 
-    def __init__(self, input_dim, output_dim, num_heads=1, concat=True, alpha=0.2):
+    def __init__(self, input_dim, output_dim, num_heads=1, concat=True, alpha=0.2, dropout = 0.6):
         super().__init__()
         self.num_heads = num_heads
         self.concat = concat
+        self.dropout = dropout
         if self.concat:
             assert output_dim % num_heads == 0
             output_dim = output_dim // num_heads
@@ -59,7 +60,7 @@ class GATLayer(nn.Module):
         attention = eij.new_zeros(adj_matrix.shape+(self.num_heads,)).fill_(-9e15) 
         attention[adj_matrix[...,None].repeat(1,1,self.num_heads) == 1] = eij.reshape(-1)
         attention = F.softmax(attention, dim=1)
-        #attention = F.dropout(attention, self.dropout, training=self.training)
+        attention = F.dropout(attention, self.dropout, training=self.training)
 
         # [2708, 2708, num_heads], [2708, num_heads, output_dim] = [2708, num_heads, output_dim]
         # sum(alpha*W*h_i)
@@ -72,10 +73,11 @@ class GATLayer(nn.Module):
 
 class ModifiedGATLayer(nn.Module):
 
-    def __init__(self, input_dim, output_dim, num_heads=1, concat=True, alpha=0.2):
+    def __init__(self, input_dim, output_dim, num_heads=1, concat=True, alpha=0.2, dropout = 0.6):
         super().__init__()
         self.num_heads = num_heads
         self.concat = concat
+        self.dropout = dropout
         if self.concat:
             assert output_dim % num_heads == 0
             output_dim = output_dim // num_heads
@@ -131,7 +133,7 @@ class ModifiedGATLayer(nn.Module):
         attention = eij.new_zeros(adj_matrix.shape+(self.num_heads,)).fill_(-9e15) 
         attention[adj_matrix[...,None].repeat(1,1,self.num_heads) == 1] = eij.reshape(-1)
         attention = F.softmax(attention, dim=1)
-        #attention = F.dropout(attention, self.dropout, training=self.training)
+        attention = F.dropout(attention, self.dropout, training=self.training)
 
         # [2708, 2708, num_heads], [2708, num_heads, output_dim] = [2708, num_heads, output_dim]
         # sum(alpha*W*h_i)

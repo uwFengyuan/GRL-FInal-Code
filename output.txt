@@ -1,0 +1,3 @@
+PubMed: 
+Mean best test accuracy: 0.5338999629020691; SD: 0.011484329588711262
+Mean runtime: 1104.7754140138627; Mean epoches: 33.0
