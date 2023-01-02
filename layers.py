@@ -60,7 +60,7 @@ class GATLayer(nn.Module):
         attention = eij.new_zeros(adj_matrix.shape+(self.num_heads,)).fill_(-9e15) 
         attention[adj_matrix[...,None].repeat(1,1,self.num_heads) == 1] = eij.reshape(-1)
         attention = F.softmax(attention, dim=1)
-        attention = F.dropout(attention, self.dropout, training=self.training)
+        #attention = F.dropout(attention, self.dropout, training=self.training)
 
         # [2708, 2708, num_heads], [2708, num_heads, output_dim] = [2708, num_heads, output_dim]
         # sum(alpha*W*h_i)
@@ -133,11 +133,11 @@ class ModifiedGATLayer(nn.Module):
         attention = eij.new_zeros(adj_matrix.shape+(self.num_heads,)).fill_(-9e15) 
         attention[adj_matrix[...,None].repeat(1,1,self.num_heads) == 1] = eij.reshape(-1)
         attention = F.softmax(attention, dim=1)
-        attention = F.dropout(attention, self.dropout, training=self.training)
+        #attention = F.dropout(attention, self.dropout, training=self.training)
 
         # [2708, 2708, num_heads], [2708, num_heads, output_dim] = [2708, num_heads, output_dim]
         # sum(alpha*W*h_i)
-        h_prime = torch.einsum('ijh,jhc->ihc', attention, W3h) 
+        h_prime = torch.einsum('ijh,jho->iho', attention, W3h) 
 
         if self.concat:
             return h_prime.reshape(num_nodes, -1)
