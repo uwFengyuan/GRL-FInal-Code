@@ -42,7 +42,7 @@ class GNNModule(nn.Module):
     def forward(self, x, adj_matrix):
       x = F.dropout(x, self.dropout, training=self.training)
       x = self.fisrt(x, adj_matrix)
-      x = F.relu(x)
+      x = F.elu(x)
       x = F.dropout(x, self.dropout, training=self.training)
       x = self.second(x, adj_matrix)
       return x
@@ -60,7 +60,7 @@ class MLPModule(nn.Module):
     def forward(self, x):
       x = F.dropout(x, self.dropout, training=self.training)
       x = self.fisrt(x)
-      x = F.relu(x)
+      x = F.elu(x)
       x = F.dropout(x, self.dropout, training=self.training)
       x = self.second(x)
       return x

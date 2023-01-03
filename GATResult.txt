@@ -1,0 +1,160 @@
+THIS MODEL IS: MLP
+Best test accuracy is 0.5249999761581421 with 12 epochs
+Best test accuracy is 0.5180000066757202 with 1 epochs
+Best test accuracy is 0.5109999775886536 with 1 epochs
+Best test accuracy is 0.4959999918937683 with 1 epochs
+Best test accuracy is 0.48100000619888306 with 13 epochs
+Best test accuracy is 0.48100000619888306 with 1 epochs
+Best test accuracy is 0.47999998927116394 with 13 epochs
+Best test accuracy is 0.4869999885559082 with 11 epochs
+Best test accuracy is 0.4880000054836273 with 0 epochs
+Best test accuracy is 0.5049999952316284 with 7 epochs
+Cora: 
+Mean best test accuracy: 0.49720001220703125; SD: 0.015708591789007187
+Mean runtime: 0.20306849479675293; Mean epoches: 6.0
+Best test accuracy is 0.5040000081062317 with 13 epochs
+Best test accuracy is 0.4950000047683716 with 1 epochs
+Best test accuracy is 0.4830000102519989 with 14 epochs
+Best test accuracy is 0.48500001430511475 with 6 epochs
+Best test accuracy is 0.4729999899864197 with 7 epochs
+Best test accuracy is 0.4690000116825104 with 8 epochs
+Best test accuracy is 0.4880000054836273 with 4 epochs
+Best test accuracy is 0.4860000014305115 with 12 epochs
+Best test accuracy is 0.47699999809265137 with 7 epochs
+Best test accuracy is 0.48399999737739563 with 9 epochs
+CiteSeer: 
+Mean best test accuracy: 0.4843999743461609; SD: 0.009676778689026833
+Mean runtime: 0.6372554779052735; Mean epoches: 8.1
+Best test accuracy is 0.6949999928474426 with 6 epochs
+Best test accuracy is 0.6980000138282776 with 7 epochs
+Best test accuracy is 0.6949999928474426 with 7 epochs
+Best test accuracy is 0.6909999847412109 with 7 epochs
+Best test accuracy is 0.6880000233650208 with 4 epochs
+Best test accuracy is 0.6990000009536743 with 7 epochs
+Best test accuracy is 0.6919999718666077 with 6 epochs
+Best test accuracy is 0.6819999814033508 with 0 epochs
+Best test accuracy is 0.6880000233650208 with 7 epochs
+Best test accuracy is 0.6930000185966492 with 8 epochs
+PubMed: 
+Mean best test accuracy: 0.6920999884605408; SD: 0.004867239389568567
+Mean runtime: 0.2830753564834595; Mean epoches: 5.9
+THIS MODEL IS: GNN
+Best test accuracy is 0.7730000019073486 with 6 epochs
+Best test accuracy is 0.7289999723434448 with 10 epochs
+Best test accuracy is 0.7450000047683716 with 14 epochs
+Best test accuracy is 0.75 with 36 epochs
+Best test accuracy is 0.753000020980835 with 7 epochs
+Best test accuracy is 0.7540000081062317 with 20 epochs
+Best test accuracy is 0.7829999923706055 with 15 epochs
+Best test accuracy is 0.7480000257492065 with 4 epochs
+Best test accuracy is 0.7730000019073486 with 18 epochs
+Best test accuracy is 0.7540000081062317 with 3 epochs
+Cora: 
+Mean best test accuracy: 0.7561999559402466; SD: 0.015078463591635227
+Mean runtime: 0.5813634872436524; Mean epoches: 13.3
+Best test accuracy is 0.6269999742507935 with 8 epochs
+Best test accuracy is 0.6150000095367432 with 17 epochs
+Best test accuracy is 0.6039999723434448 with 13 epochs
+Best test accuracy is 0.6150000095367432 with 13 epochs
+Best test accuracy is 0.6100000143051147 with 15 epochs
+Best test accuracy is 0.609000027179718 with 13 epochs
+Best test accuracy is 0.6380000114440918 with 11 epochs
+Best test accuracy is 0.6230000257492065 with 9 epochs
+Best test accuracy is 0.6320000290870667 with 6 epochs
+Best test accuracy is 0.6209999918937683 with 8 epochs
+CiteSeer: 
+Mean best test accuracy: 0.6193999648094177; SD: 0.01024890597909689
+Mean runtime: 1.0236054182052612; Mean epoches: 11.3
+Best test accuracy is 0.7770000100135803 with 34 epochs
+Best test accuracy is 0.7829999923706055 with 37 epochs
+Best test accuracy is 0.7670000195503235 with 21 epochs
+Best test accuracy is 0.7630000114440918 with 16 epochs
+Best test accuracy is 0.7760000228881836 with 29 epochs
+Best test accuracy is 0.7760000228881836 with 34 epochs
+Best test accuracy is 0.7799999713897705 with 39 epochs
+Best test accuracy is 0.7710000276565552 with 22 epochs
+Best test accuracy is 0.7699999809265137 with 23 epochs
+Best test accuracy is 0.7549999952316284 with 14 epochs
+PubMed: 
+Mean best test accuracy: 0.7717999815940857; SD: 0.008009991608560085
+Mean runtime: 4.906471538543701; Mean epoches: 26.9
+THIS MODEL IS: GAT
+Best test accuracy is 0.7799999713897705 with 17 epochs
+Best test accuracy is 0.7900000214576721 with 17 epochs
+Best test accuracy is 0.7799999713897705 with 6 epochs
+Best test accuracy is 0.7950000166893005 with 21 epochs
+Best test accuracy is 0.7770000100135803 with 24 epochs
+Best test accuracy is 0.7730000019073486 with 5 epochs
+Best test accuracy is 0.7889999747276306 with 20 epochs
+Best test accuracy is 0.7960000038146973 with 5 epochs
+Best test accuracy is 0.777999997138977 with 8 epochs
+Best test accuracy is 0.7829999923706055 with 21 epochs
+Cora: 
+Mean best test accuracy: 0.7840999364852905; SD: 0.007515988312661648
+Mean runtime: 7.501246166229248; Mean epoches: 14.4
+Best test accuracy is 0.6520000100135803 with 6 epochs
+Best test accuracy is 0.6480000019073486 with 8 epochs
+Best test accuracy is 0.6610000133514404 with 4 epochs
+Best test accuracy is 0.652999997138977 with 8 epochs
+Best test accuracy is 0.6489999890327454 with 12 epochs
+Best test accuracy is 0.6620000004768372 with 7 epochs
+Best test accuracy is 0.6480000019073486 with 7 epochs
+Best test accuracy is 0.6489999890327454 with 5 epochs
+Best test accuracy is 0.6470000147819519 with 7 epochs
+Best test accuracy is 0.652999997138977 with 8 epochs
+CiteSeer: 
+Mean best test accuracy: 0.652199923992157; SD: 0.005075432825833559
+Mean runtime: 8.763768887519836; Mean epoches: 7.2
+Best test accuracy is 0.7099999785423279 with 4 epochs
+Best test accuracy is 0.7070000171661377 with 8 epochs
+Best test accuracy is 0.7080000042915344 with 11 epochs
+Best test accuracy is 0.75 with 62 epochs
+Best test accuracy is 0.699999988079071 with 8 epochs
+Best test accuracy is 0.7129999995231628 with 7 epochs
+Best test accuracy is 0.7089999914169312 with 11 epochs
+Best test accuracy is 0.7039999961853027 with 10 epochs
+Best test accuracy is 0.7089999914169312 with 8 epochs
+Best test accuracy is 0.703000009059906 with 4 epochs
+PubMed: 
+Mean best test accuracy: 0.7113000154495239; SD: 0.013386934995651245
+Mean runtime: 468.51095061302186; Mean epoches: 13.3
+THIS MODEL IS: ModifiedGAT
+Best test accuracy is 0.7730000019073486 with 16 epochs
+Best test accuracy is 0.7940000295639038 with 4 epochs
+Best test accuracy is 0.7749999761581421 with 2 epochs
+Best test accuracy is 0.7639999985694885 with 8 epochs
+Best test accuracy is 0.7799999713897705 with 17 epochs
+Best test accuracy is 0.777999997138977 with 6 epochs
+Best test accuracy is 0.7789999842643738 with 10 epochs
+Best test accuracy is 0.7710000276565552 with 10 epochs
+Best test accuracy is 0.7649999856948853 with 3 epochs
+Best test accuracy is 0.7570000290870667 with 6 epochs
+Cora: 
+Mean best test accuracy: 0.7735999822616577; SD: 0.009779569692909718
+Mean runtime: 5.846811580657959; Mean epoches: 8.2
+Best test accuracy is 0.652999997138977 with 3 epochs
+Best test accuracy is 0.6349999904632568 with 3 epochs
+Best test accuracy is 0.6439999938011169 with 4 epochs
+Best test accuracy is 0.6370000243186951 with 3 epochs
+Best test accuracy is 0.6420000195503235 with 6 epochs
+Best test accuracy is 0.6299999952316284 with 10 epochs
+Best test accuracy is 0.6470000147819519 with 4 epochs
+Best test accuracy is 0.6420000195503235 with 4 epochs
+Best test accuracy is 0.628000020980835 with 5 epochs
+Best test accuracy is 0.656000018119812 with 5 epochs
+CiteSeer: 
+Mean best test accuracy: 0.6414000391960144; SD: 0.008697126060724258
+Mean runtime: 7.344598340988159; Mean epoches: 4.7
+Best test accuracy is 0.6990000009536743 with 6 epochs
+Best test accuracy is 0.7599999904632568 with 73 epochs
+Best test accuracy is 0.7549999952316284 with 47 epochs
+Best test accuracy is 0.7490000128746033 with 54 epochs
+Best test accuracy is 0.75 with 51 epochs
+Best test accuracy is 0.7049999833106995 with 12 epochs
+Best test accuracy is 0.7059999704360962 with 10 epochs
+Best test accuracy is 0.75 with 48 epochs
+Best test accuracy is 0.7200000286102295 with 20 epochs
+Best test accuracy is 0.7419999837875366 with 51 epochs
+PubMed: 
+Mean best test accuracy: 0.7336000204086304; SD: 0.02227644808590412
+Mean runtime: 1231.2126331329346; Mean epoches: 37.2
